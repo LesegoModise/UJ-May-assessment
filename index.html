@@ -18,12 +18,13 @@
 
 
         <div class="row">
-            <div class="col s12">
-                <div class="col s6">
-                    <h1>{{user.fullName}}</h1>
+            <div class="col s12 l12">
+                <div class="col s12 l6">
+                    <h1 style="font-size: large;">{{user.fullName}}</h1>
+                    <img style="border-radius: 40em; object-fit: fill;" src="./images/Grad Pic.jpg" class="intropic activator" width="100px" height="100px">
 
                 </div>
-                <div class="col s6">
+                <div class="col s12 l6">
                     <ul>
                         <li>
                             <i class="material-icons">call</i>
@@ -56,8 +57,8 @@
         </div>
 
         <div class="row">
-            <div class="col s12" style="background: #d5bdaf; height: fit-content;">
-                <div class="col s5" style="background: #e3d5ca; border-radius: 2em; height: fit-content;">
+            <div class="col s12 l12" style="background: white; height: fit-content;">
+                <div class="col s12 l5" style="border-radius: 2px; border: 1px solid black; height: fit-content;">
                     <h5 style="text-decoration: underline; font-weight: bolder; text-align: center;">EDUCATION</h5>
                     <div style="font-size: medium; text-align: center; text-decoration: underline;">{{education.degree}}
                     </div>
@@ -67,13 +68,13 @@
                     <h9>Major Modules:</h9>
                     {{#each education.major}}
                     <ul>
-                        <li>{{subjects}}</li>
+                        <li>{{this}}</li>
                     </ul>
                     {{/each}}
                 </div>
-                <div class="col s1"></div>
-                <div class="col s6"
-                    style="background: #e3d5ca; border-radius: 2px; border: 1px solid black; height: fit-content;">
+                <div class="col s1 l1"></div>
+                <div class="col s12 l5"
+                    style="border-radius: 2px; border: 1px solid black; height: fit-content;">
                     <h5 style="text-decoration: underline; font-weight: bolder; text-align: center;">EXPERIENCE</h5>
                     <div style="font-size: medium; text-align: center; text-decoration: underline;">
                         {{experience.position}}</div>

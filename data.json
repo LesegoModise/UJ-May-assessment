@@ -14,11 +14,8 @@
         "year": "2023",
         "status": "Completed with Distinction",
         "photo": "",
-        "major": [
-            {
-                "subjects": ["Electronic Records Management","Strategic Information Management","Web and Intranet Management","Management Information System","Competitive Intelligence","Business Intelligence","Knowledge Management","Research Project"]
-            }
-        ]
+        "major": ["Electronic Records Management","Strategic Information Management","Web and Intranet Management","Management Information System","Competitive Intelligence","Business Intelligence","Knowledge Management","Research Project"]
+           
     },
     "experience": {
         "job": [
@@ -26,7 +23,7 @@
                 "position": "Clinic Assistant - Locum",
                 "location": "Unjani Clinic Sky City",
                 "term": "December 2023 - Present",
-                "responsibility": "Patient Management, General and Financial Administration, Stock Control, Marketing, Sales, General Maintenance, Patient Care"
+                "responsibility": ["Patient Management", "General and Financial Administration", "Stock Control", "Marketing", "Sales", "General Maintenance", "Patient Care"]
             },
             {
                 "position": "Clinic Assistant - Contract",
