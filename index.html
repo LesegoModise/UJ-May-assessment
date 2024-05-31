@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
+
 <body>
-    <h1>Hello World</h1>
+
+
+    <div class="container">
+
+
+
+        <div class="row">
+            <div class="col s12">
+                <div class="col s6">
+                    <h1>{{user.fullName}}</h1>
+
+                </div>
+                <div class="col s6">
+                    <ul>
+                        <li>
+                            <i class="material-icons">call</i>
+                            081 480 1092
+                            
+                        </li>
+
+                        
+                        <li>
+                            <i class="material-icons">email</i>
+                            lesegonhlanhla18@gmail.com
+                        </li>
+
+                        <li>
+                            <i class="material-icons">room</i>
+                            Johannesburg, South Africa
+                        </li>
+
+                        
+                        <li>
+                            <i class="material-icons">language</i>
+                            <a href="https://www.linkedin.com/in/lesego-modise-profile/">LinkedIn Profile</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="col s4">
+                    <img src="/images/Grad Pic.jpg" class="intropic activator" width="300px" height="380px">
+                </div> -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12" style="background: #d5bdaf; height: fit-content;">
+                <div class="col s5" style="background: #e3d5ca; border-radius: 2em; height: fit-content;">
+                    <h5 style="text-decoration: underline; font-weight: bolder; text-align: center;">EDUCATION</h5>
+                    <div style="font-size: medium; text-align: center; text-decoration: underline;">{{education.degree}}
+                    </div>
+                    <div>{{education.institutionName}}</div>
+                    <div>{{education.year}}</div>
+                    <div style="font-style: italic; font-weight: bold;">{{education.qualification}}</div>
+                    <h9>Major Modules:</h9>
+                    {{#each education.major}}
+                    <ul>
+                        <li>{{subjects}}</li>
+                    </ul>
+                    {{/each}}
+                </div>
+                <div class="col s1"></div>
+                <div class="col s6"
+                    style="background: #e3d5ca; border-radius: 2px; border: 1px solid black; height: fit-content;">
+                    <h5 style="text-decoration: underline; font-weight: bolder; text-align: center;">EXPERIENCE</h5>
+                    <div style="font-size: medium; text-align: center; text-decoration: underline;">
+                        {{experience.position}}</div>
+                    {{#each experience.job}}
+                    <div>{{position}}</div>
+                    <div>{{location}}</div>
+                    <div>{{term}}</div>
+                    <div>{{responsibility}}</div>
+                    <hr>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -1,38 +1,57 @@
 {
-    "user" : {
-        "fullName" : "",
-        "photo" : "",
-        "phone" : "",
-        "email" : ""
+    "user": {
+        "fullName": "Lesego Modise",
+        "description": "BCom Honours in Information and Knowledge Management - Cum Laude",
+        "photo": "Grad Pic.jpg",
+        "phone": "081 480 1092",
+        "email": "lesegonhlanhla18@gmail",
+        "location": "Johannesburg, South Africa"
     },
-    "education" : {
-        "institutionName" : "",
-        "photo" : "",
-        "description" : ""
+    "education": {
+        "degree": "Bachelor of Commerce, Honours",
+        "institutionName": "University of Johannesburg",
+        "qualification": "Qualification: Information and Knowledge Management",
+        "year": "2023",
+        "status": "Completed with Distinction",
+        "photo": "",
+        "major": [
+            {
+                "subjects": ["Electronic Records Management","Strategic Information Management","Web and Intranet Management","Management Information System","Competitive Intelligence","Business Intelligence","Knowledge Management","Research Project"]
+            }
+        ]
     },
-    "foreignLanguage" : {
-        "language" : "",
-        "phrases" : [{
-            "englishPhrase" : "",
-            "foreignLanguage" : ""
-        },
-        {
-            "englishPhrase" : "",
-            "foreignLanguage" : ""
-        }]
-    },
-    "favouriteSubjects" : [
-        {
-            "name" : "",
-            "description" : ""
-        },
-        {
-            "name" : "",
-            "description" : ""
-        },
-        {
-            "name" : "",
-            "description" : ""
-        }
-    ]
-}
+    "experience": {
+        "job": [
+            {
+                "position": "Clinic Assistant - Locum",
+                "location": "Unjani Clinic Sky City",
+                "term": "December 2023 - Present",
+                "responsibility": "Patient Management, General and Financial Administration, Stock Control, Marketing, Sales, General Maintenance, Patient Care"
+            },
+            {
+                "position": "Clinic Assistant - Contract",
+                "location": "Unjani Clinic Tokoza",
+                "term": "January 2019 - November 2023",
+                "responsibility": "Patient Management, Data Capturer, Basic HR, General and Financial Administration, Stock Control, Marketing, Sale, General Maintenance, Patient Care"
+            },
+            {
+                "position": "Student Assistant - Fixed Contract",
+                "location": "University of Johannesburg",
+                "term": "February 2023 - November 2023",
+                "responsibility": "General Administration, Marking and Invigilating, Academic Inquiries, Mentor"
+            },
+            {
+                "position": "Data Capturer",
+                "location": "Mogoma Research and Development",
+                "term": "May 2021",
+                "responsibility": "Data Capturer, Call Center, Collaborator"
+            },
+            {
+                "position": "Filing Clerk",
+                "location": "StorEx (Pty) Ltd",
+                "term": "December 2019",
+                "responsibility": "Records Management"
+            }
+        ]
+    }
+}    
