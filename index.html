@@ -12,58 +12,46 @@
 
 <body>
 
-
-    <div class="container">
-
-
-
-        <div class="row">
-            <div class="col s12 l12">
+    <body style="background-color: beige;">
+        <div class="container" style="font-family: Georgia, 'Times New Roman', Times, serif; background-color: white;">
+            <section class="row">
+                <!-- <div class="col s12 l12"> -->
                 <div class="col s12 l6">
-                    <h1 style="font-size: large;">{{user.fullName}}</h1>
-                    <img style="border-radius: 40em; object-fit: fill;" src="./images/Grad Pic.jpg" class="intropic activator" width="100px" height="100px">
-
+                    <img src="/images/Grad Pic.jpg"
+                        style="height: 300px; width: 200px; border-radius: 40em; align-items: center;">
+                    <div style="font-size: large; font-weight: bold;">{{user.description}}</div>
                 </div>
                 <div class="col s12 l6">
+                    <h1 style="font-weight: bolder;">{{user.fullName}}</h1>
                     <ul>
                         <li>
                             <i class="material-icons">call</i>
                             081 480 1092
-                            
                         </li>
-
-                        
                         <li>
                             <i class="material-icons">email</i>
                             lesegonhlanhla18@gmail.com
-                        </li>
-
+                            </l>
                         <li>
                             <i class="material-icons">room</i>
                             Johannesburg, South Africa
                         </li>
-
-                        
                         <li>
                             <i class="material-icons">language</i>
                             <a href="https://www.linkedin.com/in/lesego-modise-profile/">LinkedIn Profile</a>
                         </li>
                     </ul>
                 </div>
-                <!-- <div class="col s4">
-                    <img src="/images/Grad Pic.jpg" class="intropic activator" width="300px" height="380px">
-                </div> -->
-            </div>
-        </div>
+            </section>
 
-        <div class="row">
-            <div class="col s12 l12" style="background: white; height: fit-content;">
-                <div class="col s12 l5" style="border-radius: 2px; border: 1px solid black; height: fit-content;">
+            <section class="row">
+                <hr>
+                <div>
                     <h5 style="text-decoration: underline; font-weight: bolder; text-align: center;">EDUCATION</h5>
                     <div style="font-size: medium; text-align: center; text-decoration: underline;">{{education.degree}}
                     </div>
                     <div>{{education.institutionName}}</div>
-                    <div>{{education.year}}</div>
+                    <div style="font-style: italic;">{{education.year}}</div>
                     <div style="font-style: italic; font-weight: bold;">{{education.qualification}}</div>
                     <h9>Major Modules:</h9>
                     {{#each education.major}}
@@ -72,23 +60,98 @@
                     </ul>
                     {{/each}}
                 </div>
-                <div class="col s1 l1"></div>
-                <div class="col s12 l5"
-                    style="border-radius: 2px; border: 1px solid black; height: fit-content;">
+                <hr>
+            </section>
+
+            <section>
+                <div>
                     <h5 style="text-decoration: underline; font-weight: bolder; text-align: center;">EXPERIENCE</h5>
-                    <div style="font-size: medium; text-align: center; text-decoration: underline;">
-                        {{experience.position}}</div>
+                    <div style="font-size: medium;"></div>
                     {{#each experience.job}}
-                    <div>{{position}}</div>
-                    <div>{{location}}</div>
-                    <div>{{term}}</div>
-                    <div>{{responsibility}}</div>
+                    <div style="font-size: medium; text-align: center; text-decoration: underline;">{{position}}</div>
+                    <div style="font-weight: bold;">{{location}}</div>
+                    <div style="font-style: italic;">{{term}}</div>
+                    <div>
+                        {{#each responsibility}}
+                        <ul>
+                            <li>{{this}}</li>
+                        </ul>
+                        {{/each}}
+                    </div>
+                    {{/each}}
                     <hr>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <h5 style="text-decoration: underline; font-weight: bolder; text-align: center;">VOLUNTEER WORK</h5>
+                    <div style="font-size: medium;"></div>
+                    {{#each volunteering.service}}
+                    <div style="font-size: medium; text-align: center; text-decoration: underline; font-weight: bold;">
+                        {{type}}</div>
+                    <div>{{location}}</div>
+                    <div style="font-style: italic;">{{year}}</div>
+                    {{/each}}
+                    <hr>
+                </div>
+            </section>
+
+            <section>
+                <h5 style="text-decoration: underline; font-weight: bolder; text-align: center;">AWARDS & ACHIEVEMENTS
+                </h5>
+                <div>{{achievements.location}}</div>
+                <div>{{achievements.awards}}</div>
+                <div>{{achievements.awards1}}</div>
+                <hr>
+            </section>
+
+            <section>
+                <div>
+                    <h5 style="text-decoration: underline; font-weight: bolder; text-align: center;">CERTIFICATIONS</h5>
+                    <div style="font-size: medium;"></div>
+                    {{#each certifications.awards}}
+                    <div style="font-size: medium; text-align: center; text-decoration: underline; font-weight: bold;">
+                        {{location}}</div>
+                    <div>{{certificate}}</div>
+                    {{/each}}
+                    <hr>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <h5 style="text-decoration: underline; font-weight: bolder; text-align: center;">INTERESTS & HOBBIES
+                    </h5>
+                    <div style="font-size: medium;"></div>
+                    {{#each interests.hobbies}}
+                    <div>{{this}}</div>
                     {{/each}}
                 </div>
-            </div>
+                <hr>
+            </section>
+
+            <section>
+                <div>
+                    <h5 style="text-decoration: underline; font-weight: bolder; text-align: center;">SKILLS &
+                        PROFICIENCIES</h5>
+                    <div style="font-size: medium;"></div>
+                    {{#each skills.skillset}}
+                    <div>{{this}}</div>
+                    {{/each}}
+                </div>
+                <hr>
+            </section>
+
+            <section>
+                <div>
+                    <h5 style="text-decoration: underline; font-weight: bolder; text-align: center;">REFERENCES</h5>
+                    <div style="font-size: medium; font-style: italic; text-align: center;">Available upon request</div>
+                </div>
+                <hr>
+            </section>
+
         </div>
-    </div>
-</body>
+    </body>
 
 </html>

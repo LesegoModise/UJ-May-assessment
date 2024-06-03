@@ -2,7 +2,9 @@
     "user": {
         "fullName": "Lesego Modise",
         "description": "BCom Honours in Information and Knowledge Management - Cum Laude",
-        "photo": "Grad Pic.jpg",
+        "photo": "Grad Pic.jpg"
+    },
+    "contact": {
         "phone": "081 480 1092",
         "email": "lesegonhlanhla18@gmail",
         "location": "Johannesburg, South Africa"
@@ -19,6 +21,11 @@
     },
     "experience": {
         "job": [
+            {   "position": "4IR Intern (Work-Readiness Programme)",
+                "location": "Accenture + University of Johannesburg",
+                "term": "March 2024 - present",
+                "responsibility": ["Agile Rapid Skills Aquisition", "Full Stack Web Development", "Engineering Business Systems for 4IR", "4IR Technologies Bootcamp"]
+            },
             {
                 "position": "Clinic Assistant - Locum",
                 "location": "Unjani Clinic Sky City",
@@ -50,5 +57,55 @@
                 "responsibility": "Records Management"
             }
         ]
+    },
+    "volunteering": {
+        "service": [
+            {
+                "type": "Sanitary & Food Drive",
+                "location": "Unjani Clinic Tokoza",
+                "year": "2018"
+            },
+            {
+                "type": "Charity",
+                "location": "The High School for Girls, Potchefstroom",
+                "year": "2015-2016"
+            },
+            {
+                "type": "Job Shadowing - Nelson Mandela Day",
+                "location":"The High School for Girls, Potchefstroom",
+                "year": "2015-2016"
+            }
+        ]
+    },
+    "achievements": {
+        "location": "Royal Schools, Alberton (2017-2018",
+        "awards": "Top 5 Academic Achiever",
+        "awards1": "Top Achiever - Business Studies"            
+    },
+    "certifications": {
+        "awards": [
+            {
+                "location": "University of Johannesburg (2023)",
+                "certificate": "BCom Honours in Information & Knowledge Management (Cum Laude)"
+            },
+            {
+                "location": "Cisco Networking Academy (2023)",
+                "certificate": "Introduction to Cybersecurity"
+            },
+            {
+                "location": "University of Johannesburg (2022)",
+                "certificate": "BA Degree in Public Management & Governance"
+            },
+            {
+                "location": "University of Johannesburg (2021-2022",
+                "certificate": "Peer Mentorship"
+            }
+        ]
+    },
+    "interests": {
+        "hobbies": ["Cooking Hobbies", "Creative pursuits", "Discovering and exploring new things", "Hiking", "Learning new skills", "Networking events", "Reading", "Traveling", "Walks (5 -10 KMs)"]
+    },
+    "skills": { 
+        "skillset": ["Adaptability", "Attentive", "Customer Service", "Data Management", "Eager to Learn", "Efficient", "Electronic Records Management", "Excellent Research Abilities", "General Administrative Skills", "Management Information Systems", "Mentoring", "Microsoft Office Skills", "Motivational Skills", "People Leadership", "People Orientated", "Presentation Skills", "Problem Solving", "Punctual", "Report Generation", "Strategic Information Management", "Team Building", "Telecommunications", "Time Management", "Web & Intranet Management", "Written & Verbal Communication"]
     }
 }    
